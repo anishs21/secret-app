@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload - Photo/Video App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="upload-page">
+
+    <!-- Box 1: Photo Upload -->
+    <div class="upload-box">
+      <h2>Upload Photo</h2>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="media" accept="image/*" required><br><br>
+        <button type="submit">Upload Photo</button>
+      </form>
+    </div>
+
+    <!-- Box 2: Video Upload -->
+    <div class="upload-box">
+      <h2>Upload Video</h2>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="media" accept="video/*" required><br><br>
+        <button type="submit">Upload Video</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
